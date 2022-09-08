@@ -13,7 +13,7 @@ logInForm.addEventListener("submit", (e) => {
   fetch("/logged", options)
     .then((data) => {
       console.log(data);
-      window.location = "../index.html"
+      window.location.href = "/authorized";
     })
     .catch((err) => console.error);
 });

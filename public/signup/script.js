@@ -15,7 +15,7 @@ signUpForm.addEventListener("submit", (e) => {
   fetch("/signed", options)
     .then((data) => {
       console.log(data);
-      // window.location = '../index.html'
+      window.location.href = "/authorized";
     })
     .catch((err) => console.error);
 });
